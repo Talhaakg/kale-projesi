@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kale Projesi</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: skyblue; /* Gökyüzü rengi */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .cerceve {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .toprak {
+    background-color: sienna; /* Toprak rengi */
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .kale {
+    width: 250px;
+    height: 400px;
+    background-color: gray; /* Kale duvar rengi */
+    border: 5px solid #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .kat {
+    width: 90%;
+    height: 100px;
+    background-color: #d3d3d3;
+    border: 3px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .ustkat {
+    width: 100%;
+    height: 50px;
+    background-color: #444;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kapi {
+    width: 70px;
+    height: 100px;
+    background-color: #8b4513;
+    border: 3px solid #333;
+    border-radius: 5px;
+  }
+
+  .agac {
+    width: 40px;
+    height: 100px;
+    background-color: brown; /* Ağaç gövdesi */
+    position: absolute;
+    bottom: 110px;
+    right: 50px;
+    border-radius: 5px;
+  }
+
+  .yaprak {
+    width: 100px;
+    height: 70px;
+    background-color: green; /* Yapraklar */
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    border-radius: 50%;
+  }
+
+  .resim-sado {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 200px;
+    height: auto;
+  }
+
+  .resim-taha {
+    width: 50px;
+    height: 70px;
+  }
+</style>
+</head>
+
+<body>
+	<div class="cerceve">
+		<!-- Toprak Bölümü -->
+		<div class="toprak">
+			<img src="sadoekle.png" class="resim-sado" alt="Sado Fotoğrafı">
+		</div>
+
+		<!-- Kale Yapısı -->
+		<div class="kale">
+			<!-- Alt Kat -->
+			<div class="kat">
+				<img src="tahaekle.png" class="resim-taha" alt="Taha Fotoğrafı">
+			</div>
+			<!-- Orta Kat -->
+			<div class="kat"></div>
+			<!-- Üst Kat -->
+			<div class="ustkat"></div>
+
+			<!-- Kapı -->
+			<div class="kapi"></div>
+		</div>
+
+		<!-- Ağaç -->
+		<div class="agac">
+			<div class="yaprak"></div>
+		</div>
+	</div>
+</body>
+</html>
